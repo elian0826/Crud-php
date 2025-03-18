@@ -1,0 +1,27 @@
+# Forzar PHP 8.1
+AddHandler application/x-httpd-php81 .php
+
+# Configuración de seguridad
+Options -Indexes
+ServerSignature Off
+
+# Proteger el archivo .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Proteger archivos sensibles
+<FilesMatch "^(config\.php|database\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Redirigir errores
+ErrorDocument 404 /index.php
+ErrorDocument 403 /index.php
+
+# Configuración de PHP
+php_value upload_max_filesize 5M
+php_value post_max_size 5M
+php_flag display_errors off 

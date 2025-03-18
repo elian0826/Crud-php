@@ -1,0 +1,15 @@
+# Directorios de uploads
+/uploads/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de logs
+*.log 
