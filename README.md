@@ -80,8 +80,8 @@ CREATE TABLE clientes (
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/sistema-clientes.git
-   cd sistema-clientes
+   git clone https://github.com/elian0826/Crud-php.git
+   cd Crud-php
    ```
 
 2. Configurar el archivo de base de datos (`config/database.php`):
